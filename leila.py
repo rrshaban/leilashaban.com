@@ -1,0 +1,9 @@
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return '<p align="center"><img src="https://scontent.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10447565_595151607283305_301425635843158888_n.jpg?oh=29c918d40a121b3e859f742a77223c35&oe=5607B8D7" align="middle"></p>'
+
+if __name__ == '__main__':
+    app.run(debug=True)
